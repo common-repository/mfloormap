@@ -1,0 +1,85 @@
+
+
+/* mFloorMap */
+#FloorMap {position:relative;}
+#FloorMap * {box-sizing: border-box;}
+#FloorMap map area {background-color:yellow}
+
+#FloorMapPanels {position:relative; min-height:15em;}
+
+#FloorMapSelector {position:absolute; top:0em; left:0em; z-index:1; 
+        border:1px solid #aaa; color:#644; padding:2px 5px; background-color:#eed;}
+#FloorMapSelector ul {list-style:none; padding:0; margin:0;}
+#FloorMapSelector li {padding:0; margin:2px 0;}
+#FloorMapSelector a {width:12em; padding:0.5em 2em; display:block; 
+        background-color:#801010; color:#ccc !important; 
+        font:bold 1em sans-serif; text-decoration:none;}
+#FloorMapSelector a:hover {background-color:#a20; color:white !important; }
+
+#FloorMapCloud {display:none; position:absolute; width:535px; height:300px; 
+    background:transparent url(sprites.png) 0 0; z-index:11111; font-size:12px;}
+#FloorMapCloud h2 {margin:22px 20px 26px; font:bold 24px sans-serif;
+    overflow:hidden; white-space:nowrap; width:340px;}
+#FloorMapCloud .fmLoc {position:absolute; top:0; right:200px;
+       margin:0; padding:5px 10px; color:#eee; font:bold 18px sans-serif;
+       background:transparent url(sprites.png) -564px 0}
+#FloorMapCloud .fmLoc div {font-size:0.6em; margin-top:-2px;}
+#FloorMapCloud img {position:absolute; left:20px; top:70px; 
+       max-width:180px; max-height:150px; border:1px solid silver;}
+#FloorMapCloud .fmTel, #FloorMapCloud .fmTime, #FloorMapCloud .fmTags {
+       position:absolute; left:220px; min-height:24px; width:110px; padding-left:32px;
+       background:transparent url(sprites.png) -800px -100px no-repeat; line-height:1em;}
+#FloorMapCloud .fmTel {top:78px; background-position:-800px -100px;}
+#FloorMapCloud .fmTime {top:126px; background-position:-800px -154px;}
+#FloorMapCloud .fmTags {top:176px; background-position:-800px -207px;}
+#FloorMapCloud .fmTags ul {margin:0; padding:0; list-style:none;}
+#FloorMapCloud .fmTags li {margin:0 0 5px 0; padding:0;}
+
+#FloorMapPlace {position:relative; min-height:15em; }
+#FloorMapPlace .fmBack a {color:#888; padding-left:23px;
+       background:transparent url(sprites.png) -564px -279px no-repeat;}
+#FloorMapPlace h1 {margin:30px 20px 26px; padding:0; font:bold 24px sans-serif;}
+#FloorMapPlace h2 {margin:-22px 20px 26px; padding:0; font:italic bold 14px sans-serif; color:#aaa;}
+#FloorMapPlace cite {margin:22px 20px 26px; font:normal 11px sans-serif;}
+#FloorMapPlace .fmLoc {position:absolute; top:0; right:1em; width:20em;
+       margin:0; padding:5px 1em; color:#666; font:bold 12px/2em sans-serif;
+       background-color:#f8f8f8; border:1px solid #ccc; border-radius:12px; }
+#FloorMapPlace .fmLogoBlock {position:relative; min-height:110px;}
+#FloorMapPlace .fmLogo {max-width:180px; max-height:150px; border:1px solid silver;}
+#FloorMapPlace .fmPhoto {max-width:600px; max-height:500px; border:1px solid silver;}
+#FloorMapPlace .fmTel, #FloorMapPlace .fmTime, #FloorMapPlace .fmTags {
+       position:absolute; left:220px; min-height:24px; padding-left:32px;
+       background:transparent url(sprites.png) -800px -100px no-repeat;}
+#FloorMapPlace .fmTel {top:2px; background-position:-800px -100px;}
+#FloorMapPlace .fmTime {top:46px; background-position:-800px -154px;}
+#FloorMapPlace .fmTags {top:90px; background-position:-800px -207px;}
+#FloorMapPlace .fmTags ul {margin:0; padding:0; list-style:none;}
+#FloorMapPlace .fmTags li {margin:0; padding:0 4px; margin:0 1.5em 0 0; display:inline-block;}
+#FloorMapPlace .fmDesc {padding:2em 0 3em; color:#444;}
+
+#FloorMapSearchPanel {width:100%; max-width:900px; margin:0 auto; text-align:right;}
+#FloorMapSearchPanel div {display:inline-block; margin:0 0 0 5em; text-align:left;}
+#FloorMapSearchPanel span {display:block; position:relative}
+#FloorMapSearchPanel span:after {width:32px; height:32px; left:-38px; top:-1em; content:"";
+       position:absolute; background:transparent url(sprites.png) -800px -271px no-repeat;
+}
+#FloorMapSearchPanel select {margin-bottom:12px; width:160px; line-height:1em; height:1.5em;}
+
+#FloorMap .FloorPanel {float:left; width:290px; margin:0 8px 2em 0; box-sizing:content-box; 
+       opacity:0.9; cursor:zoom-in; border:1px solid #aaa; box-shadow:2px 2px 4px 0px #aaa;
+        background-color:#fff; position:relative;}
+#FloorMap .FloorPanelApsolutized {float:none; position:absolute; z-index:1; margin-right:0;} 
+#FloorMapPlaceholder {position: absolute;}
+#FloorMap .FloorPanelZoomed {opacity:1; cursor:default; z-index:2; transition:all 0.3s linear;}
+
+#FloorMap .Ping {position:absolute; width:40px; height:40px; border-radius:9999px;
+  background-color: rgba(255,255,200,0.5);
+  border: 1px solid black;
+  z-index: 3;
+  pointer-events: none;  
+  animation: sonarWave 1.5s linear 1;
+}
+@keyframes sonarWave {
+  from {opacity: 0.1;}
+  to {transform:scale(8); opacity:0;}
+}

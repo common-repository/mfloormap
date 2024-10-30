@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 25, 2018, 4:39:21 PM
+    Author     : miroslav
+*/
+.mFloorMap > h2 > span {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 13px;
+    font-weight: normal;
+    
+}
+.mFloorMap .fixed .check-column div {
+    font-size: 11px;
+    text-align: center;
+}
+
+.mFloorMap .wp-list-table {border-collapse: collapse;}
+.mFloorMap .wp-list-table thead th, .mFloorMap .wp-list-table thead td, 
+.mFloorMap .wp-list-table tfoot th, .mFloorMap .wp-list-table tfoot td {
+    border: 1px solid #bbb;
+    background-color: #e0e0e4;
+}
+.mFloorMap .wp-list-table tr:hover {background-color:#e0e0e0;}
+
+.mFloorMap .mFormTable {}
+.mFloorMap .mFormTable td, .mFloorMap .mFormTable th {
+    border: 1px solid #bbb;
+    background-color: #e0e0e4;
+    padding: 0.5em 1em;
+}
+.mFloorMap .mFormTable input, .mFloorMap .mFormTable select, .mFloorMap .mFormTable textarea {border-color:#bbb;} 
+.mFloorMap a {display:inline-block;}
+.mFloorMap .column-Id {width:4em;}
+.mFloorMap .column-Title {min-width:30%;}
+.mFloorMap .column-Published {width:6em;}
+.mFloorMap .column-Ordering {width:6em;}
+
+.mFloorMap .CheckMarkYes {color:green; font-size:2.2em; line-height:1px; vertical-align:middle;}
+.mFloorMap .CheckMarkNo {color:red; font-size:2em; line-height:1px; vertical-align:middle;}
+.mFloorMap .ReorderArrowUp {color:blue; text-decoration:none; cursor:pointer; padding:0 4px; height:20px; line-height:14px;}
+.mFloorMap .ReorderArrowDn {color:blue; text-decoration:none; cursor:pointer; padding:0 4px; height:20px; line-height:18px;}
+
+.mFloorMap .ImgThumb {background:linear-gradient(to bottom, #888, #eee, #888); border:1px solid #666; 
+       min-width:250px; vertical-align:middle;}
+.mFloorMap .LogoThumb {background:linear-gradient(to bottom, #888, #eee, #888); border:1px solid #666; 
+       min-width:50px; vertical-align:middle;}
+.mFloorMap .PhotoThumb {background:linear-gradient(to bottom, #888, #eee, #888); border:1px solid #666; 
+       min-width:100px; vertical-align:middle;}
+.mFloorMap .TagArray label {display:inline-block; width:15em; background-color:#ccc; padding:4px; margin:0 1em 4px 0;}
+
+.mFloorMap .error i {font-size:30px; color:red; line-height:38px;}
+.mFloorMap .error p {display:inline-block; margin-left:24px; color:maroon;}
+.mFloorMap .updated i {font-size:30px; color:green; line-height:38px;}
+.mFloorMap .updated p {display:inline-block; margin-left:24px; color:#060;}
+
+#item_locmark {width:10em;}
+
+#mFloorMapMappingContainer {
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    position: relative;
+    border: 1px solid silver;
+}
+#mFloorMapMappingContainer svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mFloorMap .SvgTransparentPoints .SvgPoint {
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+}
+
+.mFloorMap .SvgPoint {
+  position: absolute;
+  border: 1px solid rgb(255,255,255,0.3);
+  outline: 1px solid black;
+  width: 8px;
+  height: 8px;      
+  cursor: pointer;
+}
+.mFloorMap .BtnZoom {
+    display: block;
+    width: 3em;
+    margin: 0.5em 0;
+    padding: 0;
+}
